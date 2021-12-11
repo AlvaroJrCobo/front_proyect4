@@ -40,6 +40,7 @@ const Login = () => {
         <Input name='correo' type='email' label='Correo' required={true} />
         <Input name='password' type='password' label='Contraseña' required={true} />
         <ButtonLoading
+          className='btn btn-primary'
           disabled={Object.keys(formData).length === 0}
           loading={mutationLoading}
           text='Iniciar Sesión'
